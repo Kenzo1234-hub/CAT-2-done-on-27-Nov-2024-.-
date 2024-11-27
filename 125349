@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register Account</title>
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+        }
+
+        form {
+
+            width: 400px;
+
+            margin: 50px auto;
+
+            padding: 20px;
+
+            border: 1px solid #ccc;
+
+            border-radius: 10px;
+
+            background-color: #f9f9f9;
+
+        }
+
+        h1 {
+
+            text-align: center;
+
+        }
+
+        label {
+
+            display: block;
+
+            margin: 10px 0 5px;
+
+        }
+
+        input, select {
+
+            width: 100%;
+
+            padding: 8px;
+
+            margin-bottom: 10px;
+
+            border: 1px solid #ccc;
+
+            border-radius: 5px;
+
+        }
+
+        .error {
+
+            color: red;
+
+            font-size: 0.9em;
+
+            margin-top: -10px;
+
+        }
+
+        .buttons {
+
+            text-align: center;
+
+        }
+
+        button {
+
+            padding: 10px 20px;
+
+            border: none;
+
+            border-radius: 5px;
+
+            background-color: #007BFF;
+
+            color: white;
+
+            cursor: pointer;
+
+        }
+
+        button:hover {
+
+            background-color: #0056b3;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <form id="registerForm">
+
+        <h1>Register Account</h1>
+
+        <!-- Full Name -->
+
+        <label for="fullname">Full Name:</label>
+
+        <input type="text" id="fullname" name="fullname">
+
+        <div class="error">User name must be at least 4 characters</div>
+
+        <!-- Password -->
+
+        <label for="password">Password:</label>
+
+        <input type="password" id="password" name="password">
+
+        <div class="error">Password must be at least 4 characters</div>
+
+        <!-- Confirm Password -->
+
+        <label for="confirmPassword">Confirm Password:</label>
+
+        <input type="password" id="confirmPassword" name="confirmPassword">
+
+        <div class="error">Passwords do not match</div>
+
+        <!-- Email -->
+
+        <label for="email">Email:</label>
+
+        <input type="email" id="email" name="email">
+
+        <div class="error">Invalid email format</div>
+
+        <!-- Phone Number -->
+
+        <label for="phone">Phone Number:</label>
+
+        <input type="text" id="phone" name="phone">
+
+        <div class="error">Invalid phone number</div>
+
+        <!-- Zip Code -->
+
+        <label for="zip">Zip Code:</label>
+
+        <input type="text" id="zip" name="zip">
+
+        <div class="error">Invalid Zip Code</div>
+
+        <!-- Card Type -->
+
+        <label for="cardType">Card Type:</label>
+
+        <select id="cardType" name="cardType">
+
+            <option value="Visa">Visa</option>
+
+            <option value="MasterCard">MasterCard</option>
+
+            <option value="AmEx">American Express</option>
+
+        </select>
+
+        <!-- Card Number -->
+
+        <label for="cardNumber">Card Number:</label>
+
+        <input type="text" id="cardNumber" name="cardNumber">
+
+        <div class="error">Invalid card number format</div>
+
+        <!-- Expiration Date -->
+
+        <label for="expiration">Expiration Date:</label>
+
+        <input type="text" id="expiration" name="expiration" placeholder="YYYY-MM-DD">
+
+        <div class="error">Invalid date format</div>
+
+        <!-- Buttons -->
+
+        <div class="buttons">
+
+            <button type="submit">Register</button>
+
+            <button type="reset">Clear Form</button>
+
+        </div>
+
+    </form>
+
+</body>
+
+</html>
